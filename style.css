@@ -1,0 +1,261 @@
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+
+.cabecalho {
+    background-color: #cccccc;
+    padding: 20px 0;
+}
+
+.caixa_manu{
+    position: relative;
+    width: 940px; /**tamanho padrão para web**/
+    margin: 0 auto;
+}
+
+nav{
+    position: absolute;
+    top: 110px;
+    right: 0;
+
+}
+
+nav li {
+    display: inline;
+    margin: 0 0 0 15px;
+
+}
+
+nav a {
+    text-transform: uppercase; /**Deixar texto em maiúculo**/
+    color: black;
+    font-weight: bold;
+    font-size: 22px;
+    text-decoration: none; /**Tirar o sublinhado padrão**/
+}
+
+nav a:hover/**HOVER é comportamento do mouse**/{
+    color: #C78C19;
+    text-decoration: underline; /**Deixar texto sublinhado ao passar o mouse em cima**/
+}
+
+.produtos{
+    width: 940px;
+    margin: 0 auto;
+    padding: 50px 0; /**Espaçamento interno**/
+}
+
+.produtos li{
+    display: inline-block; /**Coloca a linha em bloco e alinhar pela base **/
+    text-align: center; /**Texto centralizado**/
+    width: 30%; /**Largura do blocos**/
+    vertical-align: top; /**Alinhar pelo topo **/
+    margin: 0 1.5%; /**Margem espaçamento externo**/
+    padding: 30px 20px; /**Espaçamento interno EX:30px(p/ cima e p/ baixo) 20px(p/ direita e p/ esquerda)**/
+    box-sizing: border-box; /**Define que o valor width é fixo e o valor padding está incluso no width**/
+    border-color: black; /**Cor da borda**/
+    border-width: 2px; /**Largura da borda**/
+    border-style: solid ; /**Estilo da borda, solid, linha continua**/
+    /**ou**/
+    border: 2px solid black; /**É o mesmo que escrever as três linhas acima (border-color: black; border-width: 2px;border-style: solid)**/
+    border-radius: 10px; /**Para arredondar canto de borda**/
+}
+
+.produtos li:hover{
+    border-color: #C78C19;
+}
+
+.produtos li:active/**Para mudar a cor ao clicar com o mouse**/ {
+    border-color: #088c19;
+}
+
+.produtos li:hover h2 {
+    font-size: 34px;
+}
+
+.produtos h2{
+    font-size: 30px; /**Tamanho da fonte**/
+    font-weight: bold; /**Estilo da fonte, nesse caso, negrito**/
+
+}
+
+.produto_descricao{
+    font-size: 18px;
+}
+
+.produto_preco{
+    font-size: 22px; /**Tamanho da fonte**/
+    font-weight: bold; /**Estilo da fonte, nesse caso, negrito**/
+    margin-top: 10px;
+}
+
+footer{
+    background: url("bg.jpg");
+    text-align: center;
+    padding: 40px 0;
+}
+
+.copyright {
+    color: white;
+    font-size: 13px;
+    margin: 20px 0 0;
+}
+
+
+form{
+    margin: 40px 0;
+    padding: 10px 25px;
+}
+
+form label, form legend{
+    display: block;
+    font-size: 20px;
+    margin: 0 0 10px;
+}
+
+.input_padrao{
+    display: block;
+    margin: 0 0 20px;
+    padding: 10px 25px;
+    width: 50%;
+}
+
+.checkbox{
+    margin: 20px 0;
+}
+
+.enviar{
+    width: 40%;
+    padding: 15px 0;
+    background: #fba907;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    transition: 1s all;
+    cursor: pointer;
+}
+
+.enviar:hover{
+    background: #C78C19;
+    transform: scale(1.2);
+}
+
+table{
+    margin: 20px 25px 40px;
+
+}
+
+thead{
+    background: #555555;
+    color: white;
+    font-weight: bold;
+}
+
+td,th{
+    border: 1px solid #000000;
+    padding: 8px 15px;
+}
+
+/*Página Inicial*/
+
+.banner{
+    width: 100%;
+}
+
+.titulo_principal{
+    text-align: center;
+    font-size: 2em; /*EM medida proporcional ------- 2em ignifica que o tamanho da fonte Será Sempre o dobro*/
+    margin: 0 0 1em; /*Seu eSpaço vai ser o mesmo de sua fonte*/
+    clear: left; /*Tira o efeitos como o do Float e outros */
+}
+
+.princial{
+    padding: 3em 0;
+    background: #fefefe;
+    width: 940px;
+    margin: 0 auto;
+}
+
+.princial p {
+    margin: 0 0 1em;
+}
+
+.princial strong {
+    font-weight: bold;
+}
+
+.princial em {
+    font-style: italic;
+}
+
+.utensilios {
+    width: 120px;
+    float: left;
+    margin: 0 20px 20px 0;
+}
+
+.mapa {
+    padding: 3em 0;
+    background: linear-gradient(#fefefe,#888888);
+
+}
+
+.mapa_conteudo{
+    width: 940px;
+    margin: 0 auto;
+}
+
+.mapa p {
+    margin: 0 0 2em;
+    text-align: center;
+}
+
+.beneficios{
+    padding: 3em 0;
+    background: #888888;
+}
+
+.itens{
+    line-height: 1.5; /*espaçamento entre linhas*/
+}
+
+itens:before {
+    content: "★"
+}
+
+/*first-child - para pegar o primeiro item da lista*/
+/*last-child - para pegar o ultimo item da lista*/
+/*nth-child(nºpoição do item desejado) - para pegar o item em uma posição epecífica da lista*/
+.itens:first-child /**/{
+    font-weight: bold;
+}
+
+.conteudo_beneficios{
+    width: 640px;
+    margin: 0 auto;
+}
+
+.lista_beneficios{
+    width: 40%;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.imagembeneficios{
+    width: 60%;
+    opacity: 1;
+    box-shadow: 10px 10px 10px 0 #000000;
+}
+
+.imagembeneficios:hover{
+    opacity: 0.3;
+    transition: 400ms;
+}
+
+
+.video{
+    width: 560px;
+    margin: 2em auto;
+}
